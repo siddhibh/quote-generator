@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right , rgb(12, 199, 193), rgb(62, 64, 174));
+}
+.wrapper{
+    background:  transparent;
+    width: 605px;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    box-shadow: 0 12px 35px rgba(52, 20, 20, 0.885);
+}
+header, .content :where(i, p, span){
+    color: #fff;
+  }
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper .content{
+    margin: 35px 0;
+}
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area i{
+    font-size: 15px;
+}
+.quote-area i:first-child {
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+.quote-area .quote{
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+.content .author{
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.author span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+.wrapper .buttons{
+    border-top: 1px solid #ccc;
+  }
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.features ul{
+    display: flex;
+}
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.features ul li:first-child{
+    margin-left: 0;
+  }
+  ul li:is(:hover, .active){
+    color: #333;
+    border: 2px solid #fff;
+    background: #fff;
+  }
+  ul .speech.active{
+    pointer-events: none;
+  }
+.features button{
+    border: none;
+    outline: none;
+    color: #333;
+    cursor: pointer;
+    font-style: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: 2px solid #333;
+}
+.features button:hover{
+    color: #fff;
+    background: #333;
+    border: 2px solid #fff;
+}
+.buttons button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+  }
